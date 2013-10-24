@@ -2,7 +2,7 @@ package class17lab;
 
 import java.util.*;
 
-public class Employee {
+public class Employee implements Comparable{
     private String lastName;
     private String firstName;
     private String ssn;
@@ -63,6 +63,11 @@ public class Employee {
   @Override
     public String toString() {
         return "Employee{" +  "lastName=" + lastName + ", firstName=" + firstName + ", ssn=" + ssn + '}';
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
 }
